@@ -48,12 +48,12 @@
     display: none;
 }
 
-    h1 {
+h1 {
     font-family: 'Roboto';
     color:black;
     margin: auto 10px;
     border: 0px;
-    padding: 0px;
+    padding: 10px 0px;
 }
 
 h4 {
@@ -68,6 +68,12 @@ p {
     font-size: 3.5vw;
     margin: 0px 10px 10px 10px;
     margin-left: 4px;
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: black;
 }
 
 #learnTo {
@@ -89,7 +95,7 @@ p {
     padding: 5px;
 }
 
-#menu li:hover {
+a:hover {
     color: #ff5c0f;
 }
 
@@ -99,7 +105,7 @@ button:hover {
 }
 
 /*
-after this marking are the settings for the the when the page is visiblie on a screen larger than 768 px
+after this marking are the settings for when the page is visiblie on a screen larger than 768 px
 */
 
 @media screen and (min-width: 768px) {
@@ -107,11 +113,12 @@ after this marking are the settings for the the when the page is visiblie on a s
    .grey_head_box {
        display: flex;
        flex-direction: row;
-       justify-content: center;
+       justify-content: space-between;
+       align-items: center;
    }
 
    .master_container {
-       padding-top: 50px;
+       padding-top: 20px;
        display: flex;
        flex-direction: row;
    }
@@ -123,12 +130,13 @@ after this marking are the settings for the the when the page is visiblie on a s
    }
 
    .button1 {
-    float: right;
-    margin-left: 0px;
+       float: right;
+       margin-left: 0px;
+       width: auto;
     }
 
     .button2 {
-       width: 25%; 
+       width: auto; 
     }
     
     .codePicture {
@@ -141,7 +149,7 @@ after this marking are the settings for the the when the page is visiblie on a s
     h1 {
         float: left;
         padding-right: 15%;
-        margin: auto 10px;
+        margin: auto auto auto 10px;
     }
 
     h4 {
@@ -158,17 +166,15 @@ after this marking are the settings for the the when the page is visiblie on a s
     }
 
     #menu {
-        float: right;
+        float: left;
         margin: auto;
-        margin-right: 0px;
         text-align: right;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 
     #menu li {
-        display: block;
-        float: left;
-        padding: 0 20px;
+        float: right;
+        align-items: stretch;
     }
 
 }
